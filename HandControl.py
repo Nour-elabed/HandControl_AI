@@ -49,6 +49,7 @@ hands = mp_hands.Hands(
     max_num_hands=1,
     min_detection_confidence=0.65,
     min_tracking_confidence=0.65,
+    
 )
 
 mp_draw = mp.solutions.drawing_utils # Utilitaire de MediaPipe pour dessiner les points de repère et les connexions des mains sur l'image. 
