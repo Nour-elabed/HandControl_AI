@@ -32,6 +32,7 @@ cap.set(cv2.CAP_PROP_FPS, 30) # 30 FPS pour une détection fluide et réactive 3
 
 # Flush buffer pour eviter lag initial 
 for _ in range(20):
+    
     cap.read() # permet de vider le buffer de la caméra pour éviter les images anciennes au démarrage
 
 cv2.namedWindow("Hand Gesture Control", cv2.WINDOW_NORMAL) # Crée une fenêtre redimensionnable pour l'affichage de la caméra
