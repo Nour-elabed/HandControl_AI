@@ -12,6 +12,7 @@ absl.logging.set_verbosity(absl.logging.ERROR)
 
 sys.stdout.reconfigure(encoding="utf-8", errors="replace") 
 
+
 pyautogui.FAILSAFE = False # désactive la sécurité de déplacement de la souris dans un coin
 pyautogui.PAUSE = 0.05  # stabilité des actions avec delai
 
