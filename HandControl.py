@@ -20,6 +20,7 @@ pyautogui.PAUSE = 0.05  # stabilité des actions avec delai
 # ── Camera ───────────────────────────────
 cap = cv2.VideoCapture(1, cv2.CAP_MSMF) # Essaie d'abord de se connecter à la caméra secondaire (index 1) pour éviter les conflits avec d'autres applications qui pourraient utiliser la caméra principale (index 0). cv2.CAP_MSMF est un backend de capture vidéo pour Windows qui peut offrir de meilleures performances et une meilleure compatibilité avec certaines caméras.
 if not cap.isOpened():
+    
 
     cap = cv2.VideoCapture(0, cv2.CAP_MSMF)
 if not cap.isOpened():
